@@ -12,11 +12,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model')
 args = parser.parse_args()
 
-class SourceSelector(object):
-    def __init__(self, method, value):
-        self.method = method
-        self.value = value
-
 
 class Sources:
     def __init__(self, model, manifest):
